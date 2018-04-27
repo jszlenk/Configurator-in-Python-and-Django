@@ -5,7 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import python_2_unicode_compatible
 
 class Oferta(models.Model):
-
     Kategoria = [
         ('Basic', 'Basic'),
         ('Tourist', 'Tourist'),
@@ -22,7 +21,6 @@ class Oferta(models.Model):
         ('4 Cylindrów', '4 Cylindrów'),
         ('6 Cylindrów', '6 Cylindrów')
     ]
-
 
     Skrzynia_biegów = [
         ('Manulana', 'Manulana'),
@@ -61,12 +59,11 @@ class Oferta(models.Model):
         ('4A4F68', '4A4F68'),
     ]
 
-    # Model
-
     imię = models.CharField(max_length=50)
-    nazwisko = models.CharField(error_messages={'required': 'Prosze podaj swoje naziwsko!'},max_length=50)
+    nazwisko = models.CharField(error_messages={'required': 'Prosze podaj swoje naziwsko!'}, max_length=50)
     email = models.EmailField()
-    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Numer telefonu należy wprowadzić w formacie: '+500500500'. Dopuszczalne do 15 cyfr")
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
+                                 message="Numer telefonu należy wprowadzić w formacie: '+500500500'. Dopuszczalne do 15 cyfr")
     telefon = models.CharField(validators=[phone_regex], max_length=15)
     ulica = models.CharField(max_length=250, blank=True)
     kod_pocztowy = models.CharField(max_length=20, blank=True)
@@ -75,7 +72,7 @@ class Oferta(models.Model):
     aktualizowano = models.DateTimeField(auto_now=True)
     wiadomość = models.TextField(blank=True, null=True, max_length=400)
     nip_regex = RegexValidator(regex=r'^[0-9]{7,18}', message="Tylko cyfry. Dopuszczalne do 18 cyfr")
-    NIP = models.CharField(validators=[nip_regex],max_length=18)
+    NIP = models.CharField(validators=[nip_regex], max_length=18)
     wyceniono = models.BooleanField(default=False)
     kategoria = models.CharField(max_length=350, default='', choices=Kategoria)
     liczba_siedzień = models.CharField(max_length=350, default='', choices=Liczba_siedzień)
@@ -83,8 +80,6 @@ class Oferta(models.Model):
     skrzynia_biegów = models.CharField(max_length=350, default='', choices=Skrzynia_biegów)
     światła = models.CharField(max_length=350, default='', choices=Światła)
     kolor = models.CharField(max_length=350, default=Kolor[0][0], choices=Kolor)
-
-    # Pakiety
 
     Hak = models.BooleanField(default=False)
     Klima_Fabryczna_z_tyłu = models.BooleanField(default=False)
@@ -106,8 +101,6 @@ class Oferta(models.Model):
     Pakiet_BP_Full_Leather = models.BooleanField(default=False)
     Pakiet_Przedłużona_Gwarancja = models.BooleanField(default=False)
 
-    # Opcje
-
     Dodatkowa_bateria = models.BooleanField(default=False)
     Opony_całoroczne = models.BooleanField(default=False)
     Spryskiwacze_reflektorów = models.BooleanField(default=False)
@@ -124,8 +117,6 @@ class Oferta(models.Model):
     Pakiet_na_złe_drogi = models.BooleanField(default=False)
     Tempomat = models.BooleanField(default=False)
     Retarder = models.BooleanField(default=False)
-
-    # Akcesoria
 
     USB = models.BooleanField(default=False)
     DMC = models.BooleanField(default=False)
@@ -157,4 +148,3 @@ class Oferta(models.Model):
 
     def get_total_cost(self):
         return sum(item.get_cost() for item in self.items.all())
-

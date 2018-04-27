@@ -39,6 +39,7 @@ def order_pdf(obj):
 order_pdf.allow_tags = True
 order_pdf.short_description = 'Oferty PDF'
 
+
 class FlatPageAdmin(admin.ModelAdmin):
     actions = [export_to_csv]
 
@@ -50,7 +51,6 @@ class FlatPageAdmin(admin.ModelAdmin):
             'fields': (
                 'kategoria', 'liczba_siedzień', 'pojemność_silnika', 'skrzynia_biegów', 'światła'
             ),
-
         }),
 
         (_('Kolor'), {
@@ -58,15 +58,14 @@ class FlatPageAdmin(admin.ModelAdmin):
             'fields': (
                 'kolor',
             ),
-
         }),
 
         (_('Wyposażenie fabryczne '), {
             'classes': ('collapse', 'extrapretty'),
             'fields': (
                 'p_k', (
-                'Hak', 'Klima_Fabryczna_z_tyłu', 'Pakiet_Kierowcy', 'Bezpieczeństwo', 'Zima_1_MB', 'Boczne_Drzwi',
-                'Parkowanie', 'Góral'), 's_p',
+                    'Hak', 'Klima_Fabryczna_z_tyłu', 'Pakiet_Kierowcy', 'Bezpieczeństwo', 'Zima_1_MB', 'Boczne_Drzwi',
+                    'Parkowanie', 'Góral'), 's_p',
                 ('Pakiet_Zima_2_BP', 'Pakiet_Chrom', 'Pakiet_Optyczny', 'Pakiet_Przednia_Panorama',
                  'Pakiet_BP_Panorama_PRO', 'Pakiet_BP_Premium_Sound', 'Pakiet_Drzwi_Elektryczne',
                  'Pakiet_BP_Deska_rozdzielcza', 'Pakiet_BP_Full_Leather', 'Pakiet_Przedłużona_Gwarancja')
@@ -85,11 +84,11 @@ class FlatPageAdmin(admin.ModelAdmin):
                     'Kierownica_wielofunkcyjna_z_komputerem_pokładowym', 'Alarm_antywłamaniowy_EDW',
                     'Pakiet_na_złe_drogi', 'Tempomat', 'Retarder'),
                 'akcesoria', (
-                'USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No', 'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool',
-                'Rodzaj_bagażnika',
-                'Ściana_separująca', 'Szyby_tylnie', 'Winda_załadunkowa', 'Jakie_półki', 'WiFi', 'DVBT', 'Lodówka',
-                'Lodówka_podschowkowa_TM', 'przyciski_STOP', 'Nietypowy_zderzak_przedni', 'Nietypowy_zderzak_tylni',
-                'Progi_boczne_spojlery')
+                    'USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No', 'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool',
+                    'Rodzaj_bagażnika',
+                    'Ściana_separująca', 'Szyby_tylnie', 'Winda_załadunkowa', 'Jakie_półki', 'WiFi', 'DVBT', 'Lodówka',
+                    'Lodówka_podschowkowa_TM', 'przyciski_STOP', 'Nietypowy_zderzak_przedni', 'Nietypowy_zderzak_tylni',
+                    'Progi_boczne_spojlery')
             ),
         }),
     )
@@ -100,23 +99,23 @@ class FlatPageAdmin(admin.ModelAdmin):
     search_fields = ('nazwisko', 'email', 'kod_pocztowy', 'miasto', 'kategoria', 'NIP',)
 
     readonly_fields = (
-    's_p', 'p_k', 'akcesoria', 'opcje', 'kategoria', 'liczba_siedzień', 'pojemność_silnika', 'skrzynia_biegów',
-    'światła', 'kolor',
-    'Hak', 'Klima_Fabryczna_z_tyłu', 'Pakiet_Kierowcy', 'Bezpieczeństwo', 'Zima_1_MB',
-    'Boczne_Drzwi', 'Parkowanie', 'Góral', 'Pakiet_Zima_2_BP', 'Pakiet_Chrom', 'Pakiet_Optyczny',
-    'Pakiet_Przednia_Panorama', 'Pakiet_BP_Panorama_PRO', 'Pakiet_BP_Premium_Sound', 'Pakiet_Drzwi_Elektryczne',
-    'Pakiet_BP_Deska_rozdzielcza', 'Pakiet_BP_Full_Leather', 'Pakiet_Przedłużona_Gwarancja',
-    'Dodatkowa_bateria', 'Opony_całoroczne', 'Spryskiwacze_reflektorów',
-    'Lampy_przeciwmgielne_z_funk_doświetlania_zakrętów', 'Ogrzewana_szyba_przednia',
-    'Siedzenie_kierowcy_komfortowe_hydrau_resorowane',
-    'Pokrywa_schowka_na_środku_deski_rozdzielczej', 'Dodatkowe_ogrzewanie_wodne',
-    'Klimatyzacja_o_zwiększonej_wydajności', 'Dogrzewacz', 'Sygnalizator_cofania',
-    'Kierownica_wielofunkcyjna_z_komputerem_pokładowym', 'Alarm_antywłamaniowy_EDW',
-    'Pakiet_na_złe_drogi', 'Tempomat', 'Retarder', 'USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No',
-    'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool', 'Rodzaj_bagażnika',
-    'Ściana_separująca', 'Szyby_tylnie', 'Winda_załadunkowa', 'Jakie_półki', 'WiFi', 'DVBT', 'Lodówka',
-    'Lodówka_podschowkowa_TM', 'przyciski_STOP', 'Nietypowy_zderzak_przedni', 'Nietypowy_zderzak_tylni',
-    'Progi_boczne_spojlery'
+        's_p', 'p_k', 'akcesoria', 'opcje', 'kategoria', 'liczba_siedzień', 'pojemność_silnika', 'skrzynia_biegów',
+        'światła', 'kolor',
+        'Hak', 'Klima_Fabryczna_z_tyłu', 'Pakiet_Kierowcy', 'Bezpieczeństwo', 'Zima_1_MB',
+        'Boczne_Drzwi', 'Parkowanie', 'Góral', 'Pakiet_Zima_2_BP', 'Pakiet_Chrom', 'Pakiet_Optyczny',
+        'Pakiet_Przednia_Panorama', 'Pakiet_BP_Panorama_PRO', 'Pakiet_BP_Premium_Sound', 'Pakiet_Drzwi_Elektryczne',
+        'Pakiet_BP_Deska_rozdzielcza', 'Pakiet_BP_Full_Leather', 'Pakiet_Przedłużona_Gwarancja',
+        'Dodatkowa_bateria', 'Opony_całoroczne', 'Spryskiwacze_reflektorów',
+        'Lampy_przeciwmgielne_z_funk_doświetlania_zakrętów', 'Ogrzewana_szyba_przednia',
+        'Siedzenie_kierowcy_komfortowe_hydrau_resorowane',
+        'Pokrywa_schowka_na_środku_deski_rozdzielczej', 'Dodatkowe_ogrzewanie_wodne',
+        'Klimatyzacja_o_zwiększonej_wydajności', 'Dogrzewacz', 'Sygnalizator_cofania',
+        'Kierownica_wielofunkcyjna_z_komputerem_pokładowym', 'Alarm_antywłamaniowy_EDW',
+        'Pakiet_na_złe_drogi', 'Tempomat', 'Retarder', 'USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No',
+        'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool', 'Rodzaj_bagażnika',
+        'Ściana_separująca', 'Szyby_tylnie', 'Winda_załadunkowa', 'Jakie_półki', 'WiFi', 'DVBT', 'Lodówka',
+        'Lodówka_podschowkowa_TM', 'przyciski_STOP', 'Nietypowy_zderzak_przedni', 'Nietypowy_zderzak_tylni',
+        'Progi_boczne_spojlery'
     )
 
     def s_p(self, instance):
@@ -138,6 +137,5 @@ class FlatPageAdmin(admin.ModelAdmin):
         return mark_safe('<br/>')
 
     akcesoria.short_description = "Akcesoria"
-
 
 admin.site.register(Oferta, FlatPageAdmin)

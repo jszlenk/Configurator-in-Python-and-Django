@@ -66,7 +66,6 @@ EMAIL_HOST_PASSWORD = 'twojehaslo'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-
 LANGUAGE_CODE = 'pl-pl'
 
 TIME_ZONE = 'Europe/Warsaw'

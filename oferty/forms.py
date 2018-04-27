@@ -117,7 +117,6 @@ class OrderCreateForm(forms.ModelForm):
                                         </div>
                                         </div>
                                              """),
-                    # Field("kolor")
                     Div(
                         'kolor',
                         template='oferty/order/wyglad.html'
@@ -188,9 +187,6 @@ class OrderCreateForm(forms.ModelForm):
                                        ),
                                        ),
                         AccordionGroup('Opcje test',
-                                       # Field('USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No', 'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool', 'Rodzaj_bagażnika',
-                                       #       'Ściana_separująca', 'Szyby_tylnie', 'Winda_załadunkowa','Jakie_półki','WiFi', 'DVBT', 'Lodówka','Lodówka_podschowkowa_TM', 'przyciski_STOP', 'Nietypowy_zderzak_przedni', 'Nietypowy_zderzak_tylni', 'Progi_boczne_spojlery',
-                                       #        css_class="extra"),
                                        Div(
                                            'USB', 'DMC', 'Przedłużenie', 'WEBASTO_Suche_Part_No',
                                            'WEBASTO_Mokre_Part_No', 'Drzwi_AutoCool', 'Rodzaj_bagażnika',
