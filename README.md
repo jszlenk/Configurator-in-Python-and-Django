@@ -4,13 +4,15 @@
 ![Django](https://img.shields.io/badge/Django-1.11-blue.svg)
 ![Crispy forms](https://img.shields.io/badge/Crispy_forms-1.61-blue.svg)
 ![WeasyPrint](https://img.shields.io/badge/WeasyPrint-0.36-blue.svg)
+![Celery](https://img.shields.io/badge/Celery-4.02-blue.svg)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.7-blue.svg)
 
 Creating a car design, configuration and automatic ordering of your own Mercedes transport vehicle.
 
 ### Main functionality
 
 - Application management through the content management system (CMS)
-- Configuring an advanced car specification
+- Configuring the advanced specification of the car according to individual needs
 - Generating order specifications in a PDF file and adding it to send orders by email
 - Automatically ordering and sending an email to customers
 - Saving and editing orders and saving generated files to the database
