@@ -1,0 +1,22 @@
+{% extends "konfigurator/base.html" %}
+
+{% block title %}
+    Dziękujemy!
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="container">
+
+            <div class="col-lg-6">
+                <h3>Dziękujemy!</h3>
+                <h5>Zapytanie o wycenę zostało złożone, a jego numer to <strong>{{ order.id }}</strong>. Skontaktujemy
+                    się z Państwem tak szybko jak to tylko możliwe.</h5>
+            </div>
+            <div class="col-lg-6">
+                <!--Zdjęcie-->
+                <p><img src="/media/products/b4.png" style="width: 90%; padding-left:30px; border: 0px solid #999;"></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

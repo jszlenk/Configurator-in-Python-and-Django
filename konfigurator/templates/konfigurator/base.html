@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}Bus Pressige{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="containerbp">
+
+        <a href="/" class="logo">Zbuduj Twojego Vana</a>
+    </div>
+</div>
+<div class="">
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div id="subheader">
+        <div class="containerbp">
+            <!--Stópka-->
+
+            <span>test</br>www.test.pl</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" class="ng-scope">
+    $(document).ready(function () {
+
+//Larger thumbnail preview
+
+        $("ul.thumb li").hover(function () {
+            $(this).css({'z-index': '10'});
+            $(this).find('img').addClass("hover").stop()
+                .animate({}, 200);
+
+        }, function () {
+            $(this).css({'z-index': '0'});
+            $(this).find('img').removeClass("hover").stop()
+                .animate({
+                    marginTop: '0',
+                    marginLeft: '0',
+                    top: '0',
+                    left: '0',
+                    width: '100px',
+                    height: '100px',
+                    padding: '5px'
+                }, 400);
+        });
+
+//Swap Image on Click
+
+        $(".nav-tabs").prepend("<li class='wyrownaie hidden-md hidden-sm hidden-xs'>BUDUJ TWOJEGO VANA</li>");
+
+
+        $('.nast').click(function () {
+            $('.nav-tabs > .active').next('li').find('a').trigger('click');
+        });
+
+        $('.poprz').click(function () {
+            $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+        });
+
+        $(".kategoria").click(function () {
+            $(".kategoria").removeClass('podswietlenie');
+            $(this).addClass('podswietlenie');
+        });
+
+        $('#b1').click(function () {
+            $('#kategoria0 > input[type=radio]').removeAttr('checked');
+            $('#id_kategoria_1').attr('checked', true);
+            $('#niema').addClass('znikaj');
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+        });
+        $('#b2').click(function () {
+            $('#kategoria0 > input[type=radio]').removeAttr('checked');
+            $('#id_kategoria_2').attr('checked', true);
+            $('#niema').addClass('znikaj');
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+        });
+        $('#b3').click(function () {
+            $('#kategoria0 > input[type=radio]').removeAttr('checked');
+            $('#id_kategoria_3').attr('checked', true);
+            $('#niema').removeClass('znikaj');
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+        });
+
+
+        $('#b4').click(function () {
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+            $('#id_liczba_siedzień_1').attr('checked', true);
+        });
+        $('#b5').click(function () {
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+            $('#id_liczba_siedzień_2').attr('checked', true);
+        });
+        $('#b6').click(function () {
+            $('#id_liczba_siedzien0 > input[type=radio]').removeAttr('checked');
+            $('#id_liczba_siedzień_3').attr('checked', true);
+        });
+
+        $(".liczba").click(function () {
+            $(".liczba").removeClass('podswietlenie');
+            $(this).addClass('podswietlenie');
+        });
+
+
+        $("ul.thumb li a").click(function () {
+            var mainImage = $(this).attr("href"); //Find Image Name
+            $("#main_view img").attr({src: mainImage});
+            return false;
+        });
+
+        $(".act").click(function () {
+            $(".act").removeClass('active2');
+            $(this).addClass('active2');
+        });
+
+
+        $('#a1').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_1').attr('checked', true);
+        });
+        $('#a2').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_2').attr('checked', true);
+        });
+
+        $('#a3').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_3').attr('checked', true);
+        });
+        $('#a4').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_4').attr('checked', true);
+        });
+        $('#a5').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_5').attr('checked', true);
+        });
+        $('#a6').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_6').attr('checked', true);
+        });
+        $('#a7').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_7').attr('checked', true);
+        });
+        $('#a8').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_8').attr('checked', true);
+        });
+        $('#a9').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_9').attr('checked', true);
+        });
+        $('#a10').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_10').attr('checked', true);
+        });
+        $('#a11').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_11').attr('checked', true);
+        });
+        $('#a12').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_12').attr('checked', true);
+        });
+        $('#a13').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_13').attr('checked', true);
+        });
+        $('#a14').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_14').attr('checked', true);
+        });
+        $('#a15').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_15').attr('checked', true);
+        });
+        $('#a16').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_16').attr('checked', true);
+        });
+        $('#a17').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_17').attr('checked', true);
+        });
+        $('#a18').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_18').attr('checked', true);
+        });
+        $('#a19').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_19').attr('checked', true);
+        });
+        $('#a20').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_20').attr('checked', true);
+        });
+        $('#a21').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_21').attr('checked', true);
+        });
+        $('#a22').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_22').attr('checked', true);
+        });
+        $('#a23').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_23').attr('checked', true);
+        });
+        $('#a24').click(function () {
+            $('#div_id_kolor > input[type=radio]').removeAttr('checked');
+            $('#id_kolor_24').attr('checked', true);
+        });
+    });
+</script>
+<style type="text/css" class="ng-scope">
+    p {
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .bs-example {
+        margin: 20px;
+    }
+
+    .active2 {
+        border: 2px solid #0090ff;
+        height: 34px;
+
+    }
+
+    ul.thumb li a {
+        width: 33px;
+        height: 36px;
+        padding-top: 20px;
+        background-color: transparent;
+        padding-bottom: -2px;
+    }
+
+    li {
+        display: inline !important;
+    }
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<html>
+<body>
+<p style="float: right"><img src="http://test.pl/wp-content/uploads/2016/03/b4-2.png"></p>
+<h1>BP Sprinter</h1>
+<p>
+    Oferta nr {{ order.id }},</br>
+    <span class="secondary">
+      {{ order.utworzony|date:"M d, Y" }}
+    </span>
+</p>
+<h3>Zaintersowany</h3>
+<p>
+    {{ order.imię }}, {{ order.nazwisko }}<br>
+    {{ order.telefon }}<br>
+    {{ order.email }}<br>
+    {{ order.kod_pocztowy }}, {{ order.miasto }}<br>
+    {{ order.ulica }}
+</p>
+<h3>Specyfikacja</h3>
+<h3 style="color:#999999">Model</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Kategoria</th>
+        <th>Liczba siedzień</th>
+        <th>Pojemność silnika</th>
+        <th>Skrzynia biegów</th>
+        <th>Światła</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="row">
+        <td>{{ order.kategoria }}</td>
+        <td>{{ order.liczba_siedzień }}</td>
+        <td>{{ order.pojemność_silnika }}</td>
+        <td>{{ order.skrzynia_biegów }}</td>
+        <td>{{ order.światła }}</td>
+    </tr>
+    </tbody>
+</table>
+<h3 style="color:#999999">Wygląd</h3>
+<table>
+    <thead>
+    <tr>
+        <th colspan="5">Kolor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="row">
+        <td colspan="5">{{ order.kolor }}</td>
+    </tr>
+    </tbody>
+</table>
+<ul style="list-style-type: none; list-style: none">
+<li>{% if order.kolor == 'E1E3E4' %}<img src="http://test/images/f1.png">{% endif %}</li>
+<li>{% if order.kolor == '354B6C' %}<img src="http://test/images/f2.png">{% endif %}</li>
+<li>{% if order.kolor == '6C4444' %}<img src="http://test/images/f3.png">{% endif %}</li>
+<li>{% if order.kolor == '0090FF' %}<img src="http://test/images/f4.png">{% endif %}</li>
+<li>{% if order.kolor == 'ACA79C' %}<img src="http://test/images/f5.png">{% endif %}</li>
+<li>{% if order.kolor == '798790' %}<img src="http://test/images/f6.png">{% endif %}</li>
+<li>{% if order.kolor == '2E6668' %}<img src="http://test/images/f7.png">{% endif %}</li>
+<li>{% if order.kolor == '2F2F2F' %}<img src="http://test/images/f8.png">{% endif %}</li>
+<li>{% if order.kolor == 'D4D0C6' %}<img src="http://test/images/f9.png">{% endif %}</li>
+<li>{% if order.kolor == '9C9B93' %}<img src="http://test/images/f10.png">{% endif %}</li>
+<li>{% if order.kolor == '595B57' %}<img src="http://test/images/f11.png">{% endif %}</li>
+<li>{% if order.kolor == 'EAC455' %}<img src="http://test/images/f12.png">{% endif %}</li>
+<li>{% if order.kolor == '307098' %}<img src="http://test/images/f13.png">{% endif %}</li>
+<li>{% if order.kolor == 'D32130' %}<img src="http://test/images/f14.png">{% endif %}</li>
+<li>{% if order.kolor == 'D12235' %}<img src="http://test/images/f15.png">{% endif %}</li>
+<li>{% if order.kolor == '868D8F' %}<img src="http://test/images/f16.png">{% endif %}</li>
+<li>{% if order.kolor == '2A436C' %}<img src="http://test/images/f17.png">{% endif %}</li>
+<li>{% if order.kolor == '323437' %}<img src="http://test/images/f18.png">{% endif %}</li>
+<li>{% if order.kolor == '534642' %}<img src="http://test/images/f19.png">{% endif %}</li>
+<li>{% if order.kolor == 'B7BCBF' %}<img src="http://test/images/f20.png">{% endif %}</li>
+<li>{% if order.kolor == '464F55' %}<img src="http://test/images/f21.png">{% endif %}</li>
+<li>{% if order.kolor == '525350' %}<img src="http://test/images/f22.png">{% endif %}</li>
+<li>{% if order.kolor == '999791' %}<img src="http://test/images/f23.png">{% endif %}</li>
+<li>{% if order.kolor == '4A4F68' %}<img src="http://test/images/f24.png">{% endif %}</li>
+</ul>
+
+<h3 style="color:#999999">Wyposażenie fabryczne</h3>
+<ul style="list-style-type: none; list-style: none">
+    <li>{% if order.Hak %}Hak{% endif %}</li>
+    <li>{% if order.Klima_Fabryczna_z_tyłu %}Klima Fabryczna z tyłu{% endif %}</li>
+    <li>{% if order.Pakiet_Kierowcy %}Pakiet Kierowcy{% endif %}</li>
+    <li>{% if order.Bezpieczeństwo %}Bezpieczeństwo{% endif %}</li>
+    <li>{% if order.Zima_1_MB %}Zima 1 MB{% endif %}</li>
+    <li>{% if order.Boczne_Drzwi %}Boczne Drzwi{% endif %}</li>
+    <li>{% if order.Parkowanie %}Parkowanie{% endif %}</li>
+    <li>{% if order.Góral %}Góral{% endif %}</li>
+    <li>{% if order.Pakiet_Zima_2_BP %}Pakiet Zima 2 BP{% endif %}</li>
+    <li>{% if order.Pakiet_Chrom %}Pakiet Chrom{% endif %}</li>
+    <li>{% if order.Pakiet_Optyczny %}Pakiet Optyczny{% endif %}</li>
+    <li>{% if order.Pakiet_Przednia_Panorama %}Pakiet Przednia Panorama{% endif %}</li>
+    <li>{% if order.Pakiet_BP_Panorama_PRO %}Pakiet BP Panorama PRO{% endif %}</li>
+    <li>{% if order.Pakiet_BP_Premium_Sound %}Pakiet BP Premium Sound{% endif %}</li>
+    <li>{% if order.Pakiet_Drzwi_Elektryczne %}Pakiet Drzwi Elektryczne{% endif %}</li>
+    <li>{% if order.Pakiet_BP_Deska_rozdzielcza %}Pakiet BP Deska rozdzielcza{% endif %}</li>
+    <li>{% if order.Pakiet_BP_Full_Leather %}Pakiet BP Full Leather{% endif %}</li>
+    <li>{% if order.Pakiet_Przedłużona_Gwarancja %}Pakiet Przedłużona Gwarancja{% endif %}</li>
+</ul>
+<h3 style="color:#999999">Opcje</h3>
+<ul  style="list-style-type: none; list-style: none">
+    <li>{% if order.Dodatkowa_bateria %}Dodatkowa bateria{% endif %}</li>
+    <li>{% if order.Opony_całoroczne %}Opony całoroczne{% endif %}</li>
+    <li>{% if order.Spryskiwacze_reflektorów %}Spryskiwacze reflektorów{% endif %}</li>
+    <li>{% if order.Lampy_przeciwmgielne_z_funk_doświetlania_zakrętów %}Lampy przeciwmgielne z funk doświetlania
+        zakrętów{% endif %}</li>
+    <li>{% if order.Ogrzewana_szyba_przednia %}Ogrzewana szyba przednia{% endif %}</li>
+    <li>{% if order.Siedzenie_kierowcy_komfortowe_hydrau_resorowane %}Siedzenie kierowcy komfortowe hydrau
+        resorowane{% endif %}</li>
+    <li>{% if order.Pokrywa_schowka_na_środku_deski_rozdzielczej %}Pokrywa schowka na środku deski
+        rozdzielczej{% endif %}</li>
+    <li>{% if order.Dodatkowe_ogrzewanie_wodne %}Dodatkowe ogrzewanie wodne{% endif %}</li>
+    <li>{% if order.Klimatyzacja_o_zwiększonej_wydajności %}Klimatyzacja o zwiększonej wydajności{% endif %}</li>
+    <li>{% if order.Dogrzewacz %}Dogrzewacz{% endif %}</li>
+    <li>{% if order.Sygnalizator_cofania %}Sygnalizator cofania{% endif %}</li>
+    <li>{% if order.Kierownica_wielofunkcyjna_z_komputerem_pokładowym %}Kierownica wielofunkcyjna z komputerem
+        pokładowym{% endif %}</li>
+    <li>{% if order.Alarm_antywłamaniowy_EDW %}Alarm antywłamaniowy EDW{% endif %}</li>
+    <li>{% if order.Pakiet_na_złe_drogi %}Pakiet na złe drogi{% endif %}</li>
+    <li>{% if order.Tempomat %}Tempomat{% endif %}</li>
+    <li>{% if order.Retarder %}Retarder{% endif %}</li>
+</ul>
+<h3 style="color:#999999">Akcesoria</h3>
+<ul style="list-style-type: none; list-style: none">
+    <li>{% if order.USB %}USB{% endif %}</li>
+    <li>{% if order.DMC %}DMC{% endif %}</li>
+    <li>{% if order.Przedłużenie %}Przedłużenie{% endif %}</li>
+    <li>{% if order.WEBASTO_Suche_Part_No %}WEBASTO Suche Part No.{% endif %}</li>
+    <li>{% if order.WEBASTO_Mokre_Part_No %}WEBASTO Mokre Part No.{% endif %}</li>
+    <li>{% if order.Drzwi_AutoCool %}Drzwi AutoCool{% endif %}</li>
+    <li>{% if order.Rodzaj_bagażnika %}Rodzaj bagażnika{% endif %}</li>
+    <li>{% if order.Ściana_separująca %}Ściana separująca{% endif %}</li>
+    <li>{% if order.Szyby_tylnie %}Szyby tylnie{% endif %}</li>
+    <li>{% if order.Winda_załadunkowa %}Winda załadunkowa{% endif %}</li>
+    <li>{% if order.Jakie_półki %}Półki BELGIA lub ELLAMP{% endif %}</li>
+    <li>{% if order.WiFi %}WiFi{% endif %}</li>
+    <li>{% if order.DVBT %}DVBT{% endif %}</li>
+    <li>{% if order.Lodówka %}Lodówka{% endif %}</li>
+    <li>{% if order.Lodówka_podschowkowa_TM %}Lodówka podschowkowa TM{% endif %}</li>
+    <li>{% if order.przyciski_STOP %}Przyciski STOP{% endif %}</li>
+    <li>{% if order.Nietypowy_zderzak_przedni %}Nietypowy zderzak przedni{% endif %}</li>
+    <li>{% if order.Nietypowy_zderzak_tylni %}Nietypowy zderzak tylni{% endif %}</li>
+    <li>{% if order.Progi_boczne_spojlery %}Progi boczne spojlery{% endif %}</li>
+</ul>
+<br>
+<h3 style="color:#9f9f9f">Dane firmy</h3>
+<p>
+    <img style="width:628px" src="https://i.ytimg.com/vi/LnU17khGR8k/maxresdefault.jpg">
+</p>
+<hr/>
+<p style="color:#999999">Street 129<br/>
+    PL 99-999 City<br/>
+    Phone: Tel. +48 99 999 99 99 Fax. +48 99 999 99 99<br/>
+    Email: test@test.pl<br/>
+    Web: www.test.pl</p>
+</body>
+</html>

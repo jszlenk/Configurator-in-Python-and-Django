@@ -1,0 +1,79 @@
+{% extends "konfigurator/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+  Kasa
+{% endblock %}
+
+{% block content %}
+  <h1>Dane firmy</h1>
+
+        {% crispy form %}
+
+
+
+
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+
+
+  <div class="order-info">
+    <h3>Zamówienie</h3>
+    <ul>
+
+    </ul>
+  </div>
+
+
+
+
+    {{ form.non_field_errors }}
+<div class="fieldWrapper">
+    {{ form.moc.errors }}
+    <label for="{{ form.moc.id_for_label }}">Email subject:</label>
+    {{ form.moc }}
+</div>
+<div class="fieldWrapper">
+    {{ form.imię.errors }}
+    <label for="{{ form.imię.id_for_label }}">Your imię:</label>
+    {{ form.imię }}
+</div>
+<div class="fieldWrapper">
+    {{ form.email.errors }}
+    <label for="{{ form.email.id_for_label }}">Your email email:</label>
+    {{ form.email }}
+</div>
+<div class="fieldWrapper">
+    {{ form.nadwozie.errors }}
+    <label for="{{ form.nadwozie.id_for_label }}">CC nadwozie?</label>
+    {{ form.nadwozie }}
+</div>
+
+
+
+  <form action="." method="post" class="order-form">
+{#    {{ form.as_ul }}#}
+      {{ form.moc.errors }}
+      {{ form.moc.label_tag }}
+      {{ form.moc }}
+      {{ form.imię.errors }}
+      {{ form.imię.label_tag }}
+      {{ form.imię }}
+      {{ form.nazwisko.errors }}
+      {{ form.nazwisko.label_tag }}
+      {{ form.nazwisko }}
+      {{ form.email.errors }}
+      {{ form.email.label_tag }}
+      {{ form.email }}
+      {{ form.adres }}
+      {{ form.kod_pocztowy }}
+      {{ form.miasto }}
+      {{ form.paid }}
+      {{ form.klimatyzacja }}
+      {{ form.nadwozie }}
+    <p><input type="submit" value="Zapytaj o cenę"></p>
+    {% csrf_token %}
+  </form>
+{% endblock %}

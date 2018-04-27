@@ -1,0 +1,15 @@
+{% extends "konfigurator/base.html" %}
+{% load crispy_forms_tags %}
+{% crispy konfiguracja_form konfiguracja_form.helper %}
+
+{% block title %}
+    XX
+{% endblock %}
+
+{% block content %}
+    <h1>Zbuduj VANA</h1>
+    <div class="order-info2">
+        {% crispy form %}
+    </div>
+
+{% endblock %}

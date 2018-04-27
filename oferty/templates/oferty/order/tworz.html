@@ -1,0 +1,18 @@
+{% extends "konfigurator/base.html" %}
+{% load crispy_forms_tags %}
+{% crispy order_create_form order_create_form.helper %}
+
+{% block title %}
+      Zbuduj swojego Mercedesa
+{% endblock %}
+
+{% block content %}
+      <div class="containerbp"><br>
+          <div class="order-info2">
+
+        {% crispy form %}
+  </div>
+  </div>
+
+
+{% endblock %}
