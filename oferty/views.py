@@ -14,7 +14,6 @@ def order_create(request):
         form = OrderCreateForm(request.POST)
         if form.is_valid():
             order = form.save()
-
             order_created.delay(order.id)
             return render(request,
                           'oferty/order/utworzony.html',
@@ -24,7 +23,6 @@ def order_create(request):
     return render(request,
                   'oferty/order/tworz.html',
                   {'form': form})
-
 
 @staff_member_required
 def admin_order_pdf(request, order_id):

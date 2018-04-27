@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -123,7 +122,6 @@ ul.errorlist {
 
 #header .logo {
     max-width: 460px;
-
     color: #9d9d9d;
     font-size: 22px;
     padding: 0;
@@ -283,7 +281,6 @@ a:focus {
 
 .xh {
     overflow-x: hidden;
-
 }
 
 .btn {
@@ -315,11 +312,6 @@ a:focus {
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
-
-/*
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #c70000 !important;
-}*/
 
 .lewybok {
     border-left: 1px solid #999999;
@@ -367,10 +359,6 @@ a:focus {
     margin-top: 32px;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-}
-
-.container3 {
-
 }
 
 .panel-body {
@@ -436,18 +424,6 @@ header .container {
     text-transform: uppercase;
 }
 
-/*hr {
-    max-width: 150px;
-    border-top: solid 2px #eee;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-    hr:after {
-        font-size: 1em;
-        color: #eee;
-    }*/
-
 .add-post {
     background-color: #eee;
 }
@@ -478,7 +454,6 @@ header .container {
         margin-bottom: 10px !important;
         vertical-align: middle;
     }
-
 }
 
 .btn-primary:hover {
@@ -544,17 +519,11 @@ header .container {
     float: right;
     margin-top: 15px;
     margin-bottom: 7px;
-
 }
 
 .panel-collapse {
     background-color: #f3f3f3 !important;
     box-shadow: inset 0px 0px 10px 0px #ABABAB, 0px 0px 0px 0px #DDDDDD;
-
-}
-
-.panel-title {
-
 }
 
 .border-right {
@@ -591,7 +560,6 @@ header .container {
     vertical-align: middle;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .no-padding {
@@ -652,26 +620,22 @@ img {
     padding-bottom: 10px;
     border: 1px solid transparent;
     margin: 10px;
-
 }
 
 .wheelbase-wrapper:hover {
     background-color: #ffffff;
     border: 1px solid #ccc;
-
 }
 
 .wheelbase-wrapper h3 {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-
 }
 
 .kategoria:hover {
     background-color: #ffffff;
     border: 1px solid #ccc;
-
 }
 
 .liczba:hover {
@@ -702,7 +666,6 @@ img {
 
 .nast {
     margin-left: 8px;
-
 }
 
 .sam {
@@ -721,7 +684,6 @@ img {
 @media (max-width: 1200px) {
     .sam {
         max-width: 460px;
-
     }
 
     .sam img {
@@ -780,7 +742,6 @@ img {
     .hig {
         display: none;
     }
-
 }
 
 #tekcol1 {
@@ -794,14 +755,12 @@ img {
     width: 400px;
     vertical-align: bottom;
     padding-top: 20px;
-
 }
 
 #tekcol3 {
     display: block;
     width: 400px;
     padding-top: 20px;
-
 }
 
 .checkbox_wrapper {
@@ -815,7 +774,6 @@ img {
     z-index: 500;
     border: 1px solid rgba(0, 0, 0, 0.56);
     margin-right: 10px !important;
-
 }
 
 input[type=checkbox] {
@@ -824,18 +782,15 @@ input[type=checkbox] {
 
 /* SQUARED TWO */
 .squaredTwo {
-
     width: 31px;
     height: 31px;
     background: #1557ff;
-
     background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     margin-top: 15px;
-
     -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
@@ -849,11 +804,9 @@ input[type=checkbox] {
     height: 20px;
     left: 4px;
     top: 4px;
-
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
-
     background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
     background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
     background: -o-linear-gradient(top, #222 0%, #45484d 100%);
@@ -862,7 +815,6 @@ input[type=checkbox] {
 }
 
 .squaredTwo label:after {
-
     opacity: 0;
     content: '';
     position: absolute;
@@ -874,7 +826,6 @@ input[type=checkbox] {
     border: 3px solid #fcfff4;
     border-top: none;
     border-right: none;
-
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -942,7 +893,6 @@ td, tr, th {
     border-top: 0px solid red !important;
     color: #444444;
     font: 400 12px / 14px Arial !important;
-
 }
 
 td {
@@ -953,12 +903,10 @@ th {
     text-align: left;
     font-weight: bold !important;
     border-bottom: 1px solid #000 !important;
-
 }
 
 .szary {
     border-bottom: 1px solid #ccc !important;
-
 }
 
 .podsu {
@@ -972,7 +920,6 @@ th {
 
 #main_view2 {
     float: right;
-
 }
 
 #main_view2 img {

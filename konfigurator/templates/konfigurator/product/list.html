@@ -1,226 +1,222 @@
 {% extends "konfigurator/base.html" %}
 {% load static %}
-
-
 {% block title %}
-    Zbuduj swojego Mercedesa
+Zbuduj swojego Mercedesa
 {% endblock %}
-
-
 {% block content %}
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div>
-                    <div class="container ng-scope">
-                        <br>
-                        <ul class="hidden-xs nav nav-tabs">
-                            <li class=""><a data-toggle="tab" class="tlo" href="" data-vivaldi-spatnav-clickable="1">1.
-                                Model</a></li>
-                            <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
-                                                    data-vivaldi-spatnav-clickable="1">2. Wygląd</a></li>
-                            <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
-                                                    data-vivaldi-spatnav-clickable="1">3. Pakiety</a></li>
-                            <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
-                                                    data-vivaldi-spatnav-clickable="1">4. Opcje i Akcesoria</a></li>
-                            <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
-                                                    data-vivaldi-spatnav-clickable="1">5. Podsumowanie</a></li>
-                        </ul>
-                    </div>
-                    <div class="row xc ng-scope">
-                        <div class="container">
-                            <div class="column col-sm-6 po">
-                                <div>
-                                    <div class="container sam">
-                                        <div class="column col-xs-5 col-sm-6 col-md-6">
-                                            <img class="vehicle img-responsive"
-                                                 src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Passenger-Van/Model/0075-MB-PassengerVan-A3-LH2-744-brilliant-silver-met-RF-Ext-030.png">
-                                        </div>
-                                        <div class="column col-xs-6 col-sm-6 col-md-6">
-                                            <div style="display: table-cell">
-                                                <strong class="hidden-xs dotted"><em>BP SPRINTER</em></strong>
-                                                <h2 class="vehicle_name">Bus</h2>
-                                            </div>
-                                            <div class="hidden-xs skos">
-                                                <p>Autobus dopasowany do Twoich potrzeb, dokładnie taki jak chcesz.</p>
-                                            </div>
-                                            <div class="hidden-xs pom">
-                                                <ul>
-                                                    <li>Max. liczba miejsc: <span class="max-standing-height">24</span>
-                                                    </li>
-                                                    <li>Max. dmc: <span class="max-payload">5,5</span> tony</li>
-                                                </ul>
-                                            </div>
-                                            <div class="hidden-sm hidden-md hidden-lg hidden-xl">
-                                                <a href="oferty/tworz" class="btn btn-primary przej">Zbuduj Sprinera</a>
-                                            </div>
-                                            <hr class="hidden-xs dotted">
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- container (top) -->
-                                <div class="container sam bottom hidden-xs nizej">
-                                    <div class="column col-xs-5 col-sm-6 col-md-6">
-                                        <img class="seating" src="https://i.imgur.com/CLpYmVu.png" width="200">
-
-                                    </div>
-                                    <div class="column col-xs-6 col-sm-6 col-md-6">
-                                        <a href="oferty/tworz" class="btn btn-primary przej">Zbuduj Sprintera</a>
-                                    </div>
-                                    <br>
-                                </div>
-                                <hr class="visible-xs dotted">
-                            </div>
-                            <div class="column col-sm-6 po">
-                                <div>
-                                    <div class="container sam lewybok">
-                                        <div class="column col-xs-5 col-sm-6 col-md-6">
-                                            <img class="vehicle img-responsive"
-                                                 src="http://assets.mbvans.com/c_scale,w_210/Mercedes-Benz-Vans/Metris/Cargo-Van/Model/0013-MCV-744-RS7-W50-000-D12-PE2.png">
-                                        </div>
-                                        <div class="column col-xs-6 col-sm-6 col-md-6">
-                                            <div style="display: table-cell">
-                                                <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
-                                                <h2 class="vehicle_name">Taxi</h2>
-                                            </div>
-                                            <div class="hidden-xs skos">
-                                                <p>Wszechstronność oraz niezrównany komfort na drodze.</p>
-                                            </div>
-                                            <div class="hidden-xs pom">
-                                                <ul>
-                                                    <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
-                                                    </li>
-                                                    <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
-                                                </ul>
-                                            </div>
-                                            <div class="hidden-sm hidden-md hidden-lg hidden-xl">
-                                                <a class="btn btn-primary disabled przej"
-                                                   data-vivaldi-spatnav-clickable="1">Zbuduj Taxi</a>
-                                            </div>
-                                            <hr class="hidden-xs dotted">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- container (top) -->
-                                <div class="container sam bottom hidden-xs nizej lewybok">
-                                    <div class="column col-xs-5 col-sm-6 col-md-6">
-                                        <img class="seating"
-                                             src="http://assets.mbvans.com/Mercedes-Benz-Vans/Metris/Cargo-Van/Model/metris-cargo-seating.png">
-                                    </div>
-
-                                    <div class="column col-xs-6 col-sm-6 col-md-6">
-                                        <a class="btn btn-primary disabled przej" data-vivaldi-spatnav-clickable="1">Zbuduj
-                                            Taxi</a>
-                                    </div>
-                                </div>
-                                <hr class="visible-xs dotted">
-                            </div>
-                        </div>
-                    </div>
-                    <br class="ng-scope">
-                    <div class="visible-xs marg ng-scope"></div>
-                    <div class="row ng-scope">
-                        <div class="container">
-                            <hr class="hidden-xs">
-                            <div class="column col-sm-6 po">
-                                <div>
-                                    <div class="container sam">
-                                        <div class="column col-xs-5 col-sm-6 col-md-6">
-                                            <img class="vehicle img-responsive"
-                                                 src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Worker-Van/Model/0077-MB-WorkerVan-147-arctic-white-RF-Ext-030.png">
-                                        </div>
-                                        <div class="column col-xs-6 col-sm-6 col-md-6">
-
-                                            <div style="display: table-cell">
-                                                <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
-                                                <h2 class="vehicle_name">Hobby</h2>
-                                            </div>
-                                            <div class="hidden-xs skos">
-                                                <p>Auto które pasuje do Ciebie i Twojego hobby, zrobione jak tego
-                                                    chcesz</p>
-                                            </div>
-                                            <div class="hidden-xs pom">
-                                                <ul>
-                                                    <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
-                                                    </li>
-                                                    <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
-                                                </ul>
-                                            </div>
-                                            <div class="hidden-sm hidden-md hidden-lg hidden-xl">
-                                                <a href="bus" class="btn btn-primary disabled przej">Zbuduj Hobby</a>
-                                            </div>
-                                            <hr class="hidden-xs dotted">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- container (top) -->
-                                <div class="container sam bottom hidden-xs nizej">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div>
+                <div class="container ng-scope">
+                    <br>
+                    <ul class="hidden-xs nav nav-tabs">
+                        <li class=""><a data-toggle="tab" class="tlo" href="" data-vivaldi-spatnav-clickable="1">1.
+                            Model</a></li>
+                        <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
+                                                data-vivaldi-spatnav-clickable="1">2. Wygląd</a></li>
+                        <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
+                                                data-vivaldi-spatnav-clickable="1">3. Pakiety</a></li>
+                        <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
+                                                data-vivaldi-spatnav-clickable="1">4. Opcje i Akcesoria</a></li>
+                        <li class="disabled"><a data-toggle="tab" class="tlo2" href=""
+                                                data-vivaldi-spatnav-clickable="1">5. Podsumowanie</a></li>
+                    </ul>
+                </div>
+                <div class="row xc ng-scope">
+                    <div class="container">
+                        <div class="column col-sm-6 po">
+                            <div>
+                                <div class="container sam">
                                     <div class="column col-xs-5 col-sm-6 col-md-6">
                                         <img class="vehicle img-responsive"
-                                             src="http://assets.mbvans.com/Mercedes-Benz-Vans/Sprinter/Cargo-Van/Model/cargo-seating.png">
+                                             src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Passenger-Van/Model/0075-MB-PassengerVan-A3-LH2-744-brilliant-silver-met-RF-Ext-030.png">
                                     </div>
                                     <div class="column col-xs-6 col-sm-6 col-md-6">
-                                        <a href="bus" class="btn btn-primary disabled przej">Zbuduj Hobby</a>
-                                    </div>
-                                    <br>
-                                </div>
-                                <hr class="visible-xs dotted">
-                            </div>
-                            <div class="column col-sm-6 po">
-                                <div>
-                                    <div class="container sam lewybok">
-                                        <div class="column col-xs-5 col-sm-6 col-md-6">
-                                            <img class="vehicle img-responsive"
-                                                 src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Crew-Van/Model/0066-MB-CrewVan-A2-LH2-744-brilliant-silver-met-RF-Ext-030.png">
+                                        <div style="display: table-cell">
+                                            <strong class="hidden-xs dotted"><em>BP SPRINTER</em></strong>
+                                            <h2 class="vehicle_name">Bus</h2>
                                         </div>
-                                        <div class="column col-xs-6 col-sm-6 col-md-6">
-                                            <div style="display: table-cell">
-                                                <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
-                                                <h2 class="vehicle_name">Mixto</h2>
-                                            </div>
-                                            <div class="hidden-xs skos">
-                                                <p>Brygada i materiał w jednym miejscu</p>
-                                            </div>
-                                            <div class="hidden-xs pom">
-                                                <ul>
-                                                    <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
-                                                    </li>
-                                                    <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
-                                                </ul>
-                                            </div>
-                                            <div class="hidden-sm hidden-md hidden-lg hidden-xl">
-                                                <a class="btn btn-primary disabled przej"
-                                                   data-vivaldi-spatnav-clickable="1">Zbuduj Mixto</a>
-                                            </div>
-                                            <hr class="hidden-xs dotted">
+                                        <div class="hidden-xs skos">
+                                            <p>Autobus dopasowany do Twoich potrzeb, dokładnie taki jak chcesz.</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- container (top) -->
-                                <div class="container sam bottom hidden-xs nizej lewybok">
-                                    <div class="column col-xs-5 col-sm-6 col-md-6">
-                                        <img class="seating"
-                                             src="http://assets.mbvans.com/Mercedes-Benz-Vans/Sprinter/Crew-Van/Model/crew-seating.png">
+                                        <div class="hidden-xs pom">
+                                            <ul>
+                                                <li>Max. liczba miejsc: <span class="max-standing-height">24</span>
+                                                </li>
+                                                <li>Max. dmc: <span class="max-payload">5,5</span> tony</li>
+                                            </ul>
+                                        </div>
+                                        <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                            <a href="oferty/tworz" class="btn btn-primary przej">Zbuduj Sprinera</a>
+                                        </div>
+                                        <hr class="hidden-xs dotted">
                                     </div>
 
+                                </div>
+                            </div>
+                            <!-- container (top) -->
+                            <div class="container sam bottom hidden-xs nizej">
+                                <div class="column col-xs-5 col-sm-6 col-md-6">
+                                    <img class="seating" src="https://i.imgur.com/CLpYmVu.png" width="200">
+
+                                </div>
+                                <div class="column col-xs-6 col-sm-6 col-md-6">
+                                    <a href="oferty/tworz" class="btn btn-primary przej">Zbuduj Sprintera</a>
+                                </div>
+                                <br>
+                            </div>
+                            <hr class="visible-xs dotted">
+                        </div>
+                        <div class="column col-sm-6 po">
+                            <div>
+                                <div class="container sam lewybok">
+                                    <div class="column col-xs-5 col-sm-6 col-md-6">
+                                        <img class="vehicle img-responsive"
+                                             src="http://assets.mbvans.com/c_scale,w_210/Mercedes-Benz-Vans/Metris/Cargo-Van/Model/0013-MCV-744-RS7-W50-000-D12-PE2.png">
+                                    </div>
                                     <div class="column col-xs-6 col-sm-6 col-md-6">
-                                        <a class="btn btn-primary disabled przej" data-vivaldi-spatnav-clickable="1">Zbuduj
-                                            Mixto</a>
+                                        <div style="display: table-cell">
+                                            <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
+                                            <h2 class="vehicle_name">Taxi</h2>
+                                        </div>
+                                        <div class="hidden-xs skos">
+                                            <p>Wszechstronność oraz niezrównany komfort na drodze.</p>
+                                        </div>
+                                        <div class="hidden-xs pom">
+                                            <ul>
+                                                <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
+                                                </li>
+                                                <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
+                                            </ul>
+                                        </div>
+                                        <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                            <a class="btn btn-primary disabled przej"
+                                               data-vivaldi-spatnav-clickable="1">Zbuduj Taxi</a>
+                                        </div>
+                                        <hr class="hidden-xs dotted">
                                     </div>
                                 </div>
-                                <hr class="visible-xs dotted">
-                                <div class="przerwa"></div>
                             </div>
-                            <img class="hidden-xs shadow_divider"
-                                 src="http://assets.mbvans.com/dist/images/sprinter/bne_shadow.png">
+                            <!-- container (top) -->
+                            <div class="container sam bottom hidden-xs nizej lewybok">
+                                <div class="column col-xs-5 col-sm-6 col-md-6">
+                                    <img class="seating"
+                                         src="http://assets.mbvans.com/Mercedes-Benz-Vans/Metris/Cargo-Van/Model/metris-cargo-seating.png">
+                                </div>
+
+                                <div class="column col-xs-6 col-sm-6 col-md-6">
+                                    <a class="btn btn-primary disabled przej" data-vivaldi-spatnav-clickable="1">Zbuduj
+                                        Taxi</a>
+                                </div>
+                            </div>
+                            <hr class="visible-xs dotted">
                         </div>
+                    </div>
+                </div>
+                <br class="ng-scope">
+                <div class="visible-xs marg ng-scope"></div>
+                <div class="row ng-scope">
+                    <div class="container">
+                        <hr class="hidden-xs">
+                        <div class="column col-sm-6 po">
+                            <div>
+                                <div class="container sam">
+                                    <div class="column col-xs-5 col-sm-6 col-md-6">
+                                        <img class="vehicle img-responsive"
+                                             src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Worker-Van/Model/0077-MB-WorkerVan-147-arctic-white-RF-Ext-030.png">
+                                    </div>
+                                    <div class="column col-xs-6 col-sm-6 col-md-6">
+
+                                        <div style="display: table-cell">
+                                            <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
+                                            <h2 class="vehicle_name">Hobby</h2>
+                                        </div>
+                                        <div class="hidden-xs skos">
+                                            <p>Auto które pasuje do Ciebie i Twojego hobby, zrobione jak tego
+                                                chcesz</p>
+                                        </div>
+                                        <div class="hidden-xs pom">
+                                            <ul>
+                                                <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
+                                                </li>
+                                                <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
+                                            </ul>
+                                        </div>
+                                        <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                            <a href="bus" class="btn btn-primary disabled przej">Zbuduj Hobby</a>
+                                        </div>
+                                        <hr class="hidden-xs dotted">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- container (top) -->
+                            <div class="container sam bottom hidden-xs nizej">
+                                <div class="column col-xs-5 col-sm-6 col-md-6">
+                                    <img class="vehicle img-responsive"
+                                         src="http://assets.mbvans.com/Mercedes-Benz-Vans/Sprinter/Cargo-Van/Model/cargo-seating.png">
+                                </div>
+                                <div class="column col-xs-6 col-sm-6 col-md-6">
+                                    <a href="bus" class="btn btn-primary disabled przej">Zbuduj Hobby</a>
+                                </div>
+                                <br>
+                            </div>
+                            <hr class="visible-xs dotted">
+                        </div>
+                        <div class="column col-sm-6 po">
+                            <div>
+                                <div class="container sam lewybok">
+                                    <div class="column col-xs-5 col-sm-6 col-md-6">
+                                        <img class="vehicle img-responsive"
+                                             src="http://assets.mbvans.com/c_scale,w_215/Mercedes-Benz-Vans/Sprinter/Crew-Van/Model/0066-MB-CrewVan-A2-LH2-744-brilliant-silver-met-RF-Ext-030.png">
+                                    </div>
+                                    <div class="column col-xs-6 col-sm-6 col-md-6">
+                                        <div style="display: table-cell">
+                                            <strong class="hidden-xs dotted czer"><em>WKRÓTCE</em></strong>
+                                            <h2 class="vehicle_name">Mixto</h2>
+                                        </div>
+                                        <div class="hidden-xs skos">
+                                            <p>Brygada i materiał w jednym miejscu</p>
+                                        </div>
+                                        <div class="hidden-xs pom">
+                                            <ul>
+                                                <li>Max. liczba miejsc: <span class="max-standing-height">9</span>
+                                                </li>
+                                                <li>Max. dmc: <span class="max-payload">3,5</span> tony</li>
+                                            </ul>
+                                        </div>
+                                        <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+                                            <a class="btn btn-primary disabled przej"
+                                               data-vivaldi-spatnav-clickable="1">Zbuduj Mixto</a>
+                                        </div>
+                                        <hr class="hidden-xs dotted">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- container (top) -->
+                            <div class="container sam bottom hidden-xs nizej lewybok">
+                                <div class="column col-xs-5 col-sm-6 col-md-6">
+                                    <img class="seating"
+                                         src="http://assets.mbvans.com/Mercedes-Benz-Vans/Sprinter/Crew-Van/Model/crew-seating.png">
+                                </div>
+
+                                <div class="column col-xs-6 col-sm-6 col-md-6">
+                                    <a class="btn btn-primary disabled przej" data-vivaldi-spatnav-clickable="1">Zbuduj
+                                        Mixto</a>
+                                </div>
+                            </div>
+                            <hr class="visible-xs dotted">
+                            <div class="przerwa"></div>
+                        </div>
+                        <img class="hidden-xs shadow_divider"
+                             src="http://assets.mbvans.com/dist/images/sprinter/bne_shadow.png">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.row -->
     </div>
+    <!-- /.row -->
+</div>
 
 {% endblock %}

@@ -16,8 +16,8 @@ def order_created(order_id):
                    '<br> {}.'.format(order.imię, order.id)
     email = EmailMultiAlternatives(subject,
                                    html_content,
-                         'admin@app.com',
-                         [order.email])
+                                   'admin@app.com',
+                                   [order.email])
 
     html = render_to_string('oferty/order/pdf.html', {'order': order})
     out = BytesIO()
@@ -30,4 +30,3 @@ def order_created(order_id):
 
     email.attach_alternative(html_content, "text/html")
     email.send()
-

@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
-admin.site.site_title = "BP"
+admin.site.site_title = "Test"
 admin.site.site_header = "Konfigurator"
 admin.site.index_title = "Administracja stroną"
 
