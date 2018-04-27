@@ -19,20 +19,20 @@ Creating a car design, configuration and automatic ordering of your own Mercedes
 
 ### Technology
 
-Web application based on the Django Framework on Backend.
+Web application based on the **Django Framework** on Backend.
 
 >Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 >
 >**Source:** [www.djangoproject.com](https://www.djangoproject.com)
 
-Configurator uses crispy forms and Bootstrap library on Frontend.
+Configurator uses **Crispy forms** and **Bootstrap** library on Frontend.
 
 >Django crispy forms is a Django application that lets you easily build, customize and reuse forms using your favorite CSS framework, without writing template code and without having to take care of annoying details. Django crispy forms provides you with a crispy filter and crispy tag that will let you control the rendering behavior of your Django forms in a very elegant and DRY way. Have full control without writing custom form templates. All this without breaking the standard way of doing things in Django, so it plays nice with any other form application.
 >
 >**Source:** [http://django-crispy-forms.readthedocs.io](http://django-crispy-forms.readthedocs.io/en/latest/index.html)
 
 
-Message broker is RabbitMQ and distributed task queue is Celery.
+Message broker is **RabbitMQ** and distributed task queue is **Celery**.
 
 
 >RabbitMQ is the most widely deployed open source message broker. RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
@@ -43,7 +43,7 @@ Message broker is RabbitMQ and distributed task queue is Celery.
 >
 >**Source:** [www.celeryproject.org](http://www.celeryproject.org/)
 
-WeasyPrint converting HTML/CSS documents to PDF format.
+**WeasyPrint** converting HTML/CSS documents to PDF format.
 
 >WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
 >
@@ -70,7 +70,7 @@ Automatic database creation.
 First of all, in the event of a change, we must prepare a migration for the previously created new model. From the main project level, issue the following command.
 
 ```python
-python manage.py makemigrations bpposthumanus
+python manage.py makemigrations app
 ```
 
 We will now synchronize the database with the new model. Issue the following command to apply existing migrations.
@@ -102,5 +102,5 @@ RabbitMQ-server
 Go to the next shell and start the Celery worker thread using the following command.
 
 ```
-celery -A bpposthumanus worker -l info
+celery -A app worker -l info
 ```
