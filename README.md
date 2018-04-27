@@ -49,9 +49,11 @@ Message broker is **RabbitMQ** and distributed task queue is **Celery**.
 >
 >**Source:** [www.weasyprint.org](http://weasyprint.org/)
 
+Otherwise HTML5, CSS3, jQuery, PostgreSQL, SQLite
+
 ### Instalation
 
-Installation dependencies with the command:
+Dependencies are installed using the command:
 
 ```python
 pip install -U -r requirements.txt
@@ -104,3 +106,10 @@ Go to the next shell and start the Celery worker thread using the following comm
 ```
 celery -A app worker -l info
 ```
+
+### Summation
+
+Python is a programming language that lets you work quickly and integrate systems more effectively.<br>
+Django makes it easier to build better Web apps more quickly and with less code.<br>
+PyPI helps you find and install the required software.<br>
+The plugs are easy to install and configure.
