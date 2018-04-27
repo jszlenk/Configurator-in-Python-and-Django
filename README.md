@@ -31,9 +31,7 @@ Configurator uses **Crispy forms** and **Bootstrap** library on Frontend.
 >
 >**Source:** [http://django-crispy-forms.readthedocs.io](http://django-crispy-forms.readthedocs.io/en/latest/index.html)
 
-
 Message broker is **RabbitMQ** and distributed task queue is **Celery**.
-
 
 >RabbitMQ is the most widely deployed open source message broker. RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
 >
@@ -49,7 +47,7 @@ Message broker is **RabbitMQ** and distributed task queue is **Celery**.
 >
 >**Source:** [www.weasyprint.org](http://weasyprint.org/)
 
-Otherwise HTML5, CSS3, jQuery, PostgreSQL, SQLite
+Otherwise: HTML5, CSS3, jQuery, PostgreSQL, SQLite
 
 ### Instalation
 
@@ -109,7 +107,7 @@ celery -A app worker -l info
 
 ### Summation
 
-Python is a programming language that lets you work quickly and integrate systems more effectively.<br>
+*Python is a programming language that lets you work quickly and integrate systems more effectively.<br>
 Django makes it easier to build better Web apps more quickly and with less code.<br>
 PyPI helps you find and install the required software.<br>
-The plugs are easy to install and configure.
+The plugs are easy to install and configure.*
