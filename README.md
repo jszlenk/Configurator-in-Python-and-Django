@@ -32,9 +32,13 @@ Configurator uses crispy forms and Bootstrap library on Frontend.
 >**Source:** [http://django-crispy-forms.readthedocs.io](http://django-crispy-forms.readthedocs.io/en/latest/index.html)
 
 
-Message broker is RabbitMQ.
+Message broker is RabbitMQ and distributed task queue is Celery.
 
 
 >RabbitMQ is the most widely deployed open source message broker. RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
 >
 >**Source:** [www.rabbitmq.com](https://www.rabbitmq.com/)
+
+>Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well. The execution units, called tasks, are executed concurrently on a single or more worker servers using multiprocessing, Eventlet, or gevent. Tasks can execute asynchronously (in the background) or synchronously (wait until ready).
+>
+>**Source:** [www.celeryproject.org](http://www.celeryproject.org/)
