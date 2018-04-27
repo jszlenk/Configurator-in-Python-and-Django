@@ -1,9 +1,13 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 SECRET_KEY = 'v8+s$npcg9rvb=9d$b+6n)s((!ov4dbeqsv)dvc)&_2)$&qd=#'
+
 DEBUG = True
+
 ALLOWED_HOSTS = ['127.0.0.1']
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,8 +87,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
-
-
-
-
-
