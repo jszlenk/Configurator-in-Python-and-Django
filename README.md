@@ -7,14 +7,15 @@
 
 Creating a car design, configuration and automatic ordering of your own Mercedes transport vehicle.
 
-### Main functionality:
+### Main functionality
 
-- Configuring the car's features
-- Generating order specifications in a PDF file
-- Attachment of a PDF file for email notification
-- Automatically ordering and sending an email
+- Application management through the content management system (CMS)
+- Configuring an advanced car specification
+- Generating order specifications in a PDF file and adding it to send orders by email
+- Automatically ordering and sending an email to customers
+- Saving and editing orders and saving generated files to the database
 
-### Technology:
+### Technology
 
 Web application based on the Django Framework on Backend.
 
