@@ -42,3 +42,65 @@ Message broker is RabbitMQ and distributed task queue is Celery.
 >Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well. The execution units, called tasks, are executed concurrently on a single or more worker servers using multiprocessing, Eventlet, or gevent. Tasks can execute asynchronously (in the background) or synchronously (wait until ready).
 >
 >**Source:** [www.celeryproject.org](http://www.celeryproject.org/)
+
+WeasyPrint converting HTML/CSS documents to PDF format.
+
+>WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
+>
+>**Source:** [www.weasyprint.org](http://weasyprint.org/)
+
+### Instalation
+
+Installation dependencies with the command:
+
+```python
+pip install -U -r requirements.txt
+```
+
+To properly send an e-mail with a pdf file, complete the lines with the appropriate data in the settings.py file
+
+```
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'email'
+EMAIL_HOST_PASSWORD = 'pass'
+```
+
+Automatic database creation.
+
+First of all, in the event of a change, we must prepare a migration for the previously created new model. From the main project level, issue the following command.
+
+```python
+python manage.py makemigrations bpposthumanus
+```
+
+We will now synchronize the database with the new model. Issue the following command to apply existing migrations.
+
+```python
+python manage.py migrate
+```
+
+To manage the administration site, we need a superuser, so from the shell level, issue the following command.
+
+```python
+python manage.py creatinguperuser
+```
+
+Run applications in the console with the command:
+
+```python
+python manage.py runserver
+```
+
+RabbitMQ required.
+
+After installation, launch RabbitMQ using the following command issued in the shell.
+
+```
+RabbitMQ-server
+```
+
+Go to the next shell and start the Celery worker thread using the following command.
+
+```
+celery -A bpposthumanus worker -l info
+```
