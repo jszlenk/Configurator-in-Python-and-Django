@@ -4,8 +4,8 @@
 ![Django](https://img.shields.io/badge/Django-1.11-blue.svg)
 ![Crispy forms](https://img.shields.io/badge/Crispy_forms-1.61-blue.svg)
 ![WeasyPrint](https://img.shields.io/badge/WeasyPrint-0.36-blue.svg)
-![Celery](https://img.shields.io/badge/Celery-4.02-blue.svg)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.7-blue.svg)
+![Celery](https://img.shields.io/badge/Celery-4.02-blue.svg)
 
 Creating a car design, configuration and automatic ordering of your own Mercedes transport vehicle.
 
@@ -31,3 +31,10 @@ Configurator uses crispy forms and Bootstrap library on Frontend.
 >
 >**Source:** [http://django-crispy-forms.readthedocs.io](http://django-crispy-forms.readthedocs.io/en/latest/index.html)
 
+
+Message broker is RabbitMQ.
+
+
+>RabbitMQ is the most widely deployed open source message broker. RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
+>
+>**Source:** [www.rabbitmq.com](https://www.rabbitmq.com/)
